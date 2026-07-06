@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nome": "Capacete de Proteção",
+    "categoria": "Proteção da Cabeça",
+    "ca": "12345"
+  },
+  {
+    "id": 2,
+    "nome": "Óculos de Segurança",
+    "categoria": "Proteção Visual",
+    "ca": "67890"
+  },
+  {
+    "id": 3,
+    "nome": "Sapato de Segurança",
+    "categoria": "Proteção dos pés",
+    "ca": "676767"
+  },
+  {
+    "id": 4,
+    "nome": "Luva de Proteção",
+    "categoria": "Proteção da Mão",
+    "ca": "674242"
+  },
+  {
+    "id": 5,
+    "nome": "Sapato de Segurança",
+    "categoria": "Proteção dos pés",
+    "ca": "676767"
+  }
+]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>EPIs</title>
+</head>
+
+<body>
+    <h1>Lista de EPIs</h1>
+    <ul id="lista"></ul>
+    <script>
+        // Faz uma requisição HTTP (GET) para o endpoint da sua API
+        fetch('http://localhost:3000/dados')
+            // Converte a resposta (que vem como texto) para JSON
+            .then(res => res.json())
+            // Aqui já temos os dados convertidos em objeto JavaScript
+            .then(dados => {
+                // Seleciona o elemento <ul> pelo ID "lista"
+                const lista = document.getElementById('lista');
+                // Percorre cada item do array de dados (cada EPI)
+                dados.forEach(epi => {
+                    // Cria um novo elemento <li>
+                    const li = document.createElement('li');
+                    // Define o texto do <li> com o nome do EPI
+                   li.textContent = `Nome: ${epi.nome} | Categoria: ${epi.categoria} | CA: ${epi.ca}`;
+                    // Adiciona o <li> dentro da <ul>
+                    lista.appendChild(li);
+                });
+            })
+            // Caso ocorra algum erro na requisição ou processamento
+            .catch(erro => {
+                // Exibe o erro no console do navegador (F12)
+                console.error('Erro ao buscar dados:', erro);
+            });
+    </script>
+</body>
+
+</html>
