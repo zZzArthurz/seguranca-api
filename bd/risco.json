@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nome": "Ruído Excessivo",
+    "categoria": "Físico",
+    "nivel": "Alto"
+  },
+  {
+    "id": 2,
+    "nome": "Poeira",
+    "categoria": "Químico",
+    "nivel": "Médio"
+  },
+  {
+    "id": 3,
+    "nome": "Vírus e Bactérias",
+    "categoria": "Biológico",
+    "nivel": "Baixo"
+  },
+  {
+    "id": 4,
+    "nome": "Postura Inadequada",
+    "categoria": "Ergonômico",
+    "nivel": "Médio"
+  },
+  {
+    "id": 5,
+    "nome": "Explosao controlada",
+    "categoria": "Fisico",
+    "nivel": "Médio"
+  }
+]
